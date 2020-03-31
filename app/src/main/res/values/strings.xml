@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JavaApp</string>
+    <string name="logout">Logout</string>
+    <string name="Java">java</string>
+    <string name="select_your_upload">Select Your Upload</string>
+    <string name="java">Java</string>
+</resources>

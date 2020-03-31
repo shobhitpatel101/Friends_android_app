@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:id="@+id/profile"
+        android:background="@color/starblue">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_feed_uploader"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:src="@drawable/cake"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/select_your_upload"
+            android:textSize="30sp"
+            tools:ignore="InvalidId" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_margin="45dp"
+            android:id="@+id/story_image"
+            android:onClick="SelectImage"
+            android:src="@drawable/upload" />
+
+        <EditText
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/description"
+            android:text=""
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/UploadButton"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Upload"
+            android:background="@drawable/button"
+            />
+    </LinearLayout>
+
+</LinearLayout>

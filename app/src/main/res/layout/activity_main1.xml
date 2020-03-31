@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drayl"
+    android:orientation="vertical"
+    tools:context=".Main1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="405dp">
+        <LinearLayout
+            android:background="@drawable/gradient_prof"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Logout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dip"
+                android:layout_margin="5dp"
+                android:layout_gravity="right"
+                android:background="@drawable/logout"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView3"
+                android:layout_width="277dp"
+                android:layout_height="159dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:onClick="imgClick"
+                android:src="@drawable/people"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/Name_dis"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:textSize="21sp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginBottom="50dp"
+                android:text="Hello Pal" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="370dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="275dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="40dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/arroba_sign"/>
+
+                    <TextView
+                        android:id="@+id/email_dis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="10dp"
+                        android:textSize="21sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="39dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/contact" />
+                    <TextView
+                        android:id="@+id/phone_dis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="21sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="39dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/cake" />
+                    <TextView
+                        android:id="@+id/DOB_dis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="21sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/more_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="more_friends"
+            android:text="All Friend"
+            android:textColor="#fff"
+            android:shadowColor="@color/fui_transparent"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button"
+            />
+
+        <Button
+            android:id="@+id/Add_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="linking_friend"
+            android:text="Feeds"
+            android:textColor="#fff"
+            android:shadowColor="@color/fui_transparent"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button"
+            />
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/det1_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                app:srcCompat="@mipmap/person_four" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/det1_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hey Pal,"
+                android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/det1_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/det2_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                app:srcCompat="@mipmap/person_four" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/det2_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hey Pal,"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/det2_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
